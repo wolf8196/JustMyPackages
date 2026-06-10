@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
+  <Project Path="JustMyPackages.Hosting/JustMyPackages.Hosting.csproj" />
   <Project Path="JustMyPackages.Logging.Abstractions/JustMyPackages.Logging.Abstractions.csproj" />
   <Project Path="JustMyPackages.Logging/JustMyPackages.Logging.csproj" />
 </Solution>
