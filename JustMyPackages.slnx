@@ -1,8 +1,8 @@
 <Solution>
-  <Folder Name="/Solution Items/">
-    <File Path=".editorconfig" />
+  <Folder Name="/hosting/">
+    <Project Path="hosting/JustMyPackages.Hosting/JustMyPackages.Hosting.csproj" />
+    <Project Path="hosting/JustMyPackages.Logging.Abstractions/JustMyPackages.Logging.Abstractions.csproj" />
+    <Project Path="hosting/JustMyPackages.Logging/JustMyPackages.Logging.csproj" />
+    <Project Path="hosting/JustMyPackages.Styles/JustMyPackages.Styles.csproj" />
   </Folder>
-  <Project Path="JustMyPackages.Hosting/JustMyPackages.Hosting.csproj" />
-  <Project Path="JustMyPackages.Logging.Abstractions/JustMyPackages.Logging.Abstractions.csproj" />
-  <Project Path="JustMyPackages.Logging/JustMyPackages.Logging.csproj" />
 </Solution>

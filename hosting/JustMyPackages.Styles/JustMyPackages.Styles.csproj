@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <Authors>Roman Vovk</Authors>
+    <Description>Package with code style rules.</Description>
+    <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
+    <Version>1.0.0-preview1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="main.editorconfig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <PackagePath>build</PackagePath>
+    </None>
+    <None Update="JustMyPackages.Styles.props">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <PackagePath>build</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

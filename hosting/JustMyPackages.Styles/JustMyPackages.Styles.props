@@ -1,0 +1,9 @@
+<Project>
+  <Target Name="CopyFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <SourceFile Include="$(MSBuildThisFileDirectory)main.editorconfig"></SourceFile>
+      <DestFile Include="$(ProjectDir)\.editorconfig"></DestFile>
+    </ItemGroup>
+    <Copy SourceFiles="@(SourceFile)" DestinationFiles="@(DestFile)"></Copy>
+  </Target>
+</Project>
