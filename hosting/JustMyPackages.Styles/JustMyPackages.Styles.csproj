@@ -7,15 +7,17 @@
     <Description>Package with code style rules.</Description>
     <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
-    <Version>1.0.0-preview1</Version>
+    <Version>1.0.0-preview2</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <None Update="main.editorconfig">
+      <Pack>true</Pack>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <PackagePath>build</PackagePath>
     </None>
     <None Update="JustMyPackages.Styles.props">
+      <Pack>true</Pack>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <PackagePath>build</PackagePath>
     </None>
