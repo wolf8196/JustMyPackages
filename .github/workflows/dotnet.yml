@@ -18,6 +18,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
+    - name: Add nuget source
+      run: dotnet nuget add source --username wolf8196 --password ${{ secrets.NUGET_PUBLISH_KEY }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/wolf8196/index.json"
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
