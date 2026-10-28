@@ -5,4 +5,8 @@
     <Project Path="hosting/JustMyPackages.Logging/JustMyPackages.Logging.csproj" />
     <Project Path="hosting/JustMyPackages.Styles/JustMyPackages.Styles.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/JustMyPackages.Hosting.Tests.GenericHost/JustMyPackages.Hosting.Tests.GenericHost.csproj" />
+    <Project Path="tests/JustMyPackages.Hosting.Tests.WebHost/JustMyPackages.Hosting.Tests.WebHost.csproj" />
+  </Folder>
 </Solution>
