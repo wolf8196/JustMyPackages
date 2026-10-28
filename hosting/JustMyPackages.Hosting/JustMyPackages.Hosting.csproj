@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="CoreDX.Unchase.Swashbuckle.AspNetCore.Extensions" Version="3.0.0" />
-    <PackageReference Include="JustMyPackages.Styles" Version="1.0.0-preview2">
+    <PackageReference Include="JustMyPackages.Styles" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
