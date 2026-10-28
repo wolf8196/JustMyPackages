@@ -7,7 +7,7 @@
     <Description>Package with code style rules.</Description>
     <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
-    <Version>1.0.0-preview2</Version>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
