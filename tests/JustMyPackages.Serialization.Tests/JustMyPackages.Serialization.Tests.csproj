@@ -21,6 +21,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MessagePackAnalyzer" Version="3.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.14" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
     <PackageReference Include="StreamCompare" Version="0.1.5" />
@@ -33,6 +37,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\http-rpc\JustMyPackages.Http.Rpc\JustMyPackages.Http.Rpc.csproj" />
+    <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.MessagePack\JustMyPackages.Serialization.MessagePack.csproj" />
     <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.NewtonsoftJson\JustMyPackages.Serialization.NewtonsoftJson.csproj" />
     <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.TextJson\JustMyPackages.Serialization.TextJson.csproj" />
   </ItemGroup>

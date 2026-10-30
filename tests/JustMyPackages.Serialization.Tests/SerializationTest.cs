@@ -1,8 +1,9 @@
-using JustMyPackages.Http.Rpc;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using FluentAssertions;
+using JustMyPackages.Http.Rpc;
+using MessagePack;
 using Xunit;
 
 namespace JustMyPackages.Serialization.Tests
@@ -43,7 +44,8 @@ namespace JustMyPackages.Serialization.Tests
                 NormalDoubleValue = 123.1231324235,
                 Nan = double.NaN,
                 NullableNan = double.NaN,
-                Guid = Guid.NewGuid(),
+                NormalDecimalValue = decimal.MaxValue,
+                GuidValue = Guid.NewGuid(),
                 LocalTimeStamp = DateTime.Now,
                 UtcTimeStamp = DateTime.UtcNow,
                 LocalTimeStampOffset = DateTimeOffset.Now,
@@ -96,48 +98,71 @@ namespace JustMyPackages.Serialization.Tests
             });
         }
 
-        private class TestDto
+        [MessagePackObject]
+        public class TestDto
         {
+            [Key(0)]
             public int DefaultIntValue { get; init; }
 
+            [Key(1)]
             public int? NullIntValue { get; init; }
 
+            [Key(2)]
             public double NormalDoubleValue { get; init; }
 
+            [Key(3)]
             public double? NormalNullableDoubleValue { get; init; }
 
+            [Key(4)]
             public double Nan { get; init; }
 
+            [Key(5)]
             public double? NullableNan { get; init; }
-            
+
+            [Key(6)]
+            public decimal NormalDecimalValue { get; set; }
+
+            [Key(7)]
             public DateTime LocalTimeStamp { get; init; }
 
+            [Key(8)]
             public DateTime UtcTimeStamp { get; init; }
 
+            [Key(9)]
             public DateTimeOffset LocalTimeStampOffset { get; init; }
 
+            [Key(10)]
             public DateTimeOffset UtcTimeStampOffset { get; init; }
 
-            public Guid Guid { get; init; }
+            [Key(11)]
+            public Guid GuidValue { get; init; }
 
+            [Key(12)]
             public IReadOnlyDictionary<string, int>? StringDictionary { get; init; }
 
+            [Key(13)]
             public IReadOnlyDictionary<int, int>? IntDictionary { get; init; }
 
+            [Key(14)]
             public IReadOnlyCollection<int>? NullCollection { get; init; }
 
+            [Key(15)]
             public IReadOnlyCollection<int>? EmptyCollection { get; init; }
 
-            public Stream? NullStream { get; init; }
-
-            public Stream? NormalStream { get; init; }
-
+            [Key(16)]
             public TestEnum Enum { get; init; }
 
+            [Key(17)]
             public IReadOnlyDictionary<TestEnum, Guid>? EnumDictionary { get; init; }
+
+            [Key(18)]
+            public Stream? NullStream { get; init; }
+
+            [Key(19)]
+            public Stream? NormalStream { get; init; }
         }
 
-        private enum TestEnum
+        public enum TestEnum
         {
             Undefined = 0,
             Value1 = 1,

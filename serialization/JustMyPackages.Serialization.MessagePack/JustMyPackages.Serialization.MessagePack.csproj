@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Authors>Roman Vovk</Authors>
+    <Description>Package with my standard configurations for MessagePack serialization.</Description>
+    <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.HighPerformance" Version="8.4.2" />
+    <PackageReference Include="JustMyPackages.Styles" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MessagePack" Version="3.1.12" />
+  </ItemGroup>
+
+</Project>
