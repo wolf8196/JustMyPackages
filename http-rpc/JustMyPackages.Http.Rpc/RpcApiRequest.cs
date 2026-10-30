@@ -13,10 +13,5 @@ namespace JustMyPackages.Http.Rpc
         /// Empty instance of <see cref="RpcApiRequest"/>.
         /// </summary>
         public static readonly RpcApiRequest Empty = new RpcApiRequest();
-
-        [JsonConstructor]
-        public RpcApiRequest()
-        {
-        }
     }
 }
