@@ -4,7 +4,6 @@ using System.IO;
 using FluentAssertions;
 using JustMyPackages.Http.Rpc;
 using MessagePack;
-using Xunit;
 
 namespace JustMyPackages.Serialization.Tests
 {
