@@ -5,6 +5,10 @@ namespace JustMyPackages.Serialization.NewtonsoftJson
 {
     public static class DefaultJsonSerializerSettings
     {
+        /// <summary>
+        /// Creates my default settings for Newtonsoft.Json serialization.
+        /// </summary>
+        /// <returns>The configured settings.</returns>
         public static JsonSerializerSettings Create()
         {
             var settings = new JsonSerializerSettings();
@@ -12,6 +16,11 @@ namespace JustMyPackages.Serialization.NewtonsoftJson
             return settings;
         }
 
+        /// <summary>
+        /// Applies my default settings for Newtonsoft.Json serialization to <see cref="JsonSerializerSettings"/> instance.
+        /// </summary>
+        /// <param name="settings">The instance to configure.</param>
+        /// <returns>The same <see cref="JsonSerializerSettings"/> instance.</returns>
         public static JsonSerializerSettings Configure(JsonSerializerSettings settings)
         {
             settings.ContractResolver = new DefaultContractResolver

@@ -4,9 +4,10 @@ using MessagePack.Formatters;
 
 namespace JustMyPackages.Serialization.MessagePack
 {
-    public class CompressedStreamResolver : IFormatterResolver
+    internal class CompressedStreamResolver : IFormatterResolver
     {
         private static readonly IMessagePackFormatter<Stream?> Formatter = new CompressedStreamFormatter();
+
         public static readonly IFormatterResolver Instance = new CompressedStreamResolver();
 
         private CompressedStreamResolver()

@@ -5,6 +5,10 @@ namespace JustMyPackages.Serialization.TextJson
 {
     public static class DefaultJsonSerializerOptions
     {
+        /// <summary>
+        /// Creates my default settings for System.Text.Json serialization.
+        /// </summary>
+        /// <returns>The configured settings.</returns>
         public static JsonSerializerOptions Create()
         {
             var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
@@ -12,6 +16,11 @@ namespace JustMyPackages.Serialization.TextJson
             return options;
         }
 
+        /// <summary>
+        /// Applies my default settings for System.Text.Json serialization to <see cref="JsonSerializerOptions"/> instance.
+        /// </summary>
+        /// <param name="options">The instance to configure.</param>
+        /// <returns>The same <see cref="JsonSerializerOptions"/> instance.</returns>
         public static JsonSerializerOptions Configure(JsonSerializerOptions options)
         {
             options.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
