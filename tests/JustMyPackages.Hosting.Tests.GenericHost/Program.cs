@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using JustMyPackages.Hosting.Tests.WebHost;
 
 namespace JustMyPackages.Hosting.Tests.GenericHost
 {

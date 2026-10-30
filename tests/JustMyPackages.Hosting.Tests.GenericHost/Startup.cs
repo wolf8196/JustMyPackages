@@ -1,8 +1,7 @@
-﻿using JustMyPackages.Hosting.Tests.GenericHost;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace JustMyPackages.Hosting.Tests.WebHost
+namespace JustMyPackages.Hosting.Tests.GenericHost
 {
     internal class Startup : IGenericHostStartup
     {

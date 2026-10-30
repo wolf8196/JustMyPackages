@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1.Controllers
+namespace JustMyPackages.Hosting.Tests.WebHost.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
