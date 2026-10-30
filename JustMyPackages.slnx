@@ -5,7 +5,11 @@
     <Project Path="hosting/JustMyPackages.Logging/JustMyPackages.Logging.csproj" />
     <Project Path="hosting/JustMyPackages.Styles/JustMyPackages.Styles.csproj" />
   </Folder>
+  <Folder Name="/http-rpc/">
+    <Project Path="http-rpc/JustMyPackages.Http.Rpc/JustMyPackages.Http.Rpc.csproj" />
+  </Folder>
   <Folder Name="/serialization/">
+    <Project Path="serialization/JustMyPackages.Serialization.MessagePack/JustMyPackages.Serialization.MessagePack.csproj" />
     <Project Path="serialization/JustMyPackages.Serialization.NewtonsoftJson/JustMyPackages.Serialization.NewtonsoftJson.csproj" />
     <Project Path="serialization/JustMyPackages.Serialization.TextJson/JustMyPackages.Serialization.TextJson.csproj" />
   </Folder>
