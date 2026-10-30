@@ -5,7 +5,7 @@ using NeoSmart.StreamCompare;
 
 namespace JustMyPackages.Serialization.Tests
 {
-    internal class StreamComparer : IEqualityComparer<Stream>
+    internal sealed class StreamComparer : IEqualityComparer<Stream>
     {
         private readonly StreamCompare _comparer;
 
@@ -20,6 +20,7 @@ namespace JustMyPackages.Serialization.Tests
             {
                 x.Position = 0;
             }
+
             if (y != null)
             {
                 y.Position = 0;

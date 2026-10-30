@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace JustMyPackages.Serialization.TextJson
 {
-    internal class CompressedBase64StreamConverter : JsonConverter<Stream>
+    internal sealed class CompressedBase64StreamConverter : JsonConverter<Stream>
     {
         public override Stream Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {

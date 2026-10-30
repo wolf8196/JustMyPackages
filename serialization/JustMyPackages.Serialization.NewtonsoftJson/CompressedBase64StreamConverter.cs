@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace JustMyPackages.Serialization.NewtonsoftJson
 {
-    internal class CompressedBase64StreamConverter : JsonConverter<Stream>
+    internal sealed class CompressedBase64StreamConverter : JsonConverter<Stream>
     {
         public override Stream? ReadJson(JsonReader reader, Type objectType, Stream? existingValue, bool hasExistingValue, JsonSerializer serializer)
         {

@@ -63,12 +63,12 @@ namespace JustMyPackages.Serialization.Tests
                 EmptyCollection = [],
                 NormalStream = new MemoryStream([1, 2, 3, 4, 5,]),
                 NullStream = null,
-                Enum = TestEnum.Value2,
-                EnumDictionary = new Dictionary<TestEnum, Guid>
+                Enum = TestEnumType.Value2,
+                EnumDictionary = new Dictionary<TestEnumType, Guid>
                 {
-                    { TestEnum.Value1, Guid.NewGuid() },
-                    { TestEnum.Value2, Guid.NewGuid() },
-                    { TestEnum.Value3, Guid.NewGuid() },
+                    { TestEnumType.Value1, Guid.NewGuid() },
+                    { TestEnumType.Value2, Guid.NewGuid() },
+                    { TestEnumType.Value3, Guid.NewGuid() },
                 }
             });
         }
@@ -149,10 +149,10 @@ namespace JustMyPackages.Serialization.Tests
             public IReadOnlyCollection<int>? EmptyCollection { get; init; }
 
             [Key(16)]
-            public TestEnum Enum { get; init; }
+            public TestEnumType Enum { get; init; }
 
             [Key(17)]
-            public IReadOnlyDictionary<TestEnum, Guid>? EnumDictionary { get; init; }
+            public IReadOnlyDictionary<TestEnumType, Guid>? EnumDictionary { get; init; }
 
             [Key(18)]
             public Stream? NullStream { get; init; }
@@ -161,7 +161,7 @@ namespace JustMyPackages.Serialization.Tests
             public Stream? NormalStream { get; init; }
         }
 
-        public enum TestEnum
+        public enum TestEnumType
         {
             Undefined = 0,
             Value1 = 1,

@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace JustMyPackages.Hosting.Tests.WebHost
 {
-    internal class Startup : IWebHostStartup
+    internal sealed class Startup : IWebHostStartup
     {
         public void ConfigureHost(IHostBuilder host, IWebHostBuilder webHost)
         {

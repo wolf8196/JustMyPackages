@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 
 namespace JustMyPackages.Hosting.Tests.WebHost
 {
-    internal class Program
+    internal sealed class Program
     {
         private static async Task Main(string[] args)
         {
