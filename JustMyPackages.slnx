@@ -5,8 +5,13 @@
     <Project Path="hosting/JustMyPackages.Logging/JustMyPackages.Logging.csproj" />
     <Project Path="hosting/JustMyPackages.Styles/JustMyPackages.Styles.csproj" />
   </Folder>
+  <Folder Name="/serialization/">
+    <Project Path="serialization/JustMyPackages.Serialization.NewtonsoftJson/JustMyPackages.Serialization.NewtonsoftJson.csproj" />
+    <Project Path="serialization/JustMyPackages.Serialization.TextJson/JustMyPackages.Serialization.TextJson.csproj" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/JustMyPackages.Hosting.Tests.GenericHost/JustMyPackages.Hosting.Tests.GenericHost.csproj" />
     <Project Path="tests/JustMyPackages.Hosting.Tests.WebHost/JustMyPackages.Hosting.Tests.WebHost.csproj" />
+    <Project Path="tests/JustMyPackages.Serialization.Tests/JustMyPackages.Serialization.Tests.csproj" />
   </Folder>
 </Solution>
