@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace JustMyPackages.Hosting.Tests.GenericHost
 {
-    internal class Startup : IGenericHostStartup
+    internal sealed class Startup : IGenericHostStartup
     {
         public void ConfigureHost(IHostBuilder host)
         {

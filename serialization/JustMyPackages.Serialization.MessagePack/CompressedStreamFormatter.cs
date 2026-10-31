@@ -7,7 +7,7 @@ using MessagePack.Formatters;
 
 namespace JustMyPackages.Serialization.MessagePack
 {
-    internal class CompressedStreamFormatter : IMessagePackFormatter<Stream?>
+    internal sealed class CompressedStreamFormatter : IMessagePackFormatter<Stream?>
     {
         public void Serialize(ref MessagePackWriter writer, Stream? value, MessagePackSerializerOptions options)
         {

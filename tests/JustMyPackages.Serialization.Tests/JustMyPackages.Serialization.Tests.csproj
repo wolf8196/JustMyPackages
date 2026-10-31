@@ -5,16 +5,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
-    <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+    <IsTestingPlatformApplication>true</IsTestingPlatformApplication>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="10.1.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="FluentAssertions" Version="[7.2.0]" />
     <PackageReference Include="FluentAssertions.Analyzers" Version="0.34.1">
       <PrivateAssets>all</PrivateAssets>
@@ -29,13 +24,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.14" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
     <PackageReference Include="StreamCompare" Version="0.1.5" />
     <PackageReference Include="xunit.runner.visualstudio" Version="4.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="xunit.v3" Version="4.0.2" />
+    <PackageReference Include="xunit.v3.mtp-v2" Version="4.0.2" />
   </ItemGroup>
 
   <ItemGroup>
