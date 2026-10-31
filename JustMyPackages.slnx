@@ -6,6 +6,7 @@
     <Project Path="hosting/JustMyPackages.Styles/JustMyPackages.Styles.csproj" />
   </Folder>
   <Folder Name="/http-rpc/">
+    <Project Path="http-rpc/JustMyPackages.Http.Rpc.Serialization/JustMyPackages.Http.Rpc.Serialization.csproj" />
     <Project Path="http-rpc/JustMyPackages.Http.Rpc/JustMyPackages.Http.Rpc.csproj" />
   </Folder>
   <Folder Name="/serialization/">
