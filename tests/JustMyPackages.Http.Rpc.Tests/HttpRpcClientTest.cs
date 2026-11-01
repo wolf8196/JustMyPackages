@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using JustMyPackages.Http.Rpc.Client;
 using JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson;
+using JustMyPackages.Http.Rpc.Serialization.TextJson;
 using JustMyPackages.Http.Rpc.Tests.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using WireMock.Matchers;
@@ -17,17 +18,17 @@ namespace JustMyPackages.Http.Rpc.Tests
 {
     public sealed class HttpRpcClientTest : IDisposable
     {
-        private readonly IServiceCollection _services;
+        private readonly IServiceCollection services;
         private readonly WireMockServer destinationService;
 
         public HttpRpcClientTest(GlobalFixture fixture)
         {
             destinationService = fixture.DestinationService;
 
-            _services = new ServiceCollection()
+            services = new ServiceCollection()
                 .AddLogging()
                 .AddSingleton(fixture.Logger)
-                .AddNewtonsoftJsonRpcSerializer()
+                .AddTextJsonRpcSerializer()
                 .AddHttpRpcClient<ITestApi, TestApiClient>(
                     GlobalFixture.ServiceName,
                     sp => new HttpRpcClientSettings(destinationService.Url!))
@@ -38,7 +39,7 @@ namespace JustMyPackages.Http.Rpc.Tests
         public async Task ExecutesRpcOperationSuccessfully()
         {
             // Arrange
-            using var sp = _services.BuildServiceProvider();
+            using var sp = services.BuildServiceProvider();
             var client = sp.GetRequiredService<ITestApi>();
             var expected = new TestResponse { IsSuccess = true, Number = 1 };
             var request = new TestRequest { Number = expected.Number };
@@ -62,7 +63,7 @@ namespace JustMyPackages.Http.Rpc.Tests
         public async Task HandlesUnsuccessfulStatusCode()
         {
             // Arrange
-            using var sp = _services.BuildServiceProvider();
+            using var sp = services.BuildServiceProvider();
             var client = sp.GetRequiredService<ITestApi>();
             var expected = new TestResponse
             {
@@ -88,7 +89,7 @@ namespace JustMyPackages.Http.Rpc.Tests
         public async Task HandlesRequestCancellation()
         {
             // Arrange
-            using var sp = _services.BuildServiceProvider();
+            using var sp = services.BuildServiceProvider();
             var client = sp.GetRequiredService<ITestApi>();
             var expected = new TestResponse
             {

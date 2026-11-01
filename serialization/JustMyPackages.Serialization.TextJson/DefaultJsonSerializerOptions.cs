@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace JustMyPackages.Serialization.TextJson
 {
@@ -37,6 +38,7 @@ namespace JustMyPackages.Serialization.TextJson
             options.ReferenceHandler = ReferenceHandler.IgnoreCycles;
             options.ReadCommentHandling = JsonCommentHandling.Skip;
             options.Converters.Add(new CompressedBase64StreamConverter());
+            options.TypeInfoResolver = new DefaultJsonTypeInfoResolver();
             return options;
         }
     }
