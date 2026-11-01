@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿  <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Authors>Roman Vovk</Authors>
-    <Description>Package with Newtonsoft.Json serialization MVC extension for communicating via RPC HTTP API.</Description>
+    <Description>Package with Newtonsoft.Json serialization MVC extension applying my default settings.</Description>
     <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
     <Nullable>enable</Nullable>

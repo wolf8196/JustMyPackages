@@ -21,6 +21,7 @@
     <Project Path="serialization/newtonsoft/JustMyPackages.Serialization.NewtonsoftJson/JustMyPackages.Serialization.NewtonsoftJson.csproj" />
   </Folder>
   <Folder Name="/serialization/textjson/">
+    <Project Path="serialization/textjson/JustMyPackages.Http.Rpc.AspNetCore.TextJson/JustMyPackages.Http.Rpc.AspNetCore.TextJson.csproj" />
     <Project Path="serialization/textjson/JustMyPackages.Http.Rpc.Serialization.TextJson/JustMyPackages.Http.Rpc.Serialization.TextJson.csproj" />
     <Project Path="serialization/textjson/JustMyPackages.Serialization.TextJson/JustMyPackages.Serialization.TextJson.csproj" />
   </Folder>
