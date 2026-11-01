@@ -10,13 +10,19 @@
     <Project Path="http-rpc/JustMyPackages.Http.Rpc.Serialization/JustMyPackages.Http.Rpc.Serialization.csproj" />
     <Project Path="http-rpc/JustMyPackages.Http.Rpc/JustMyPackages.Http.Rpc.csproj" />
   </Folder>
-  <Folder Name="/serialization/">
-    <Project Path="serialization/JustMyPackages.Http.Rpc.Serialization.MessagePack/JustMyPackages.Http.Rpc.Serialization.MessagePack.csproj" />
-    <Project Path="serialization/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson.csproj" />
-    <Project Path="serialization/JustMyPackages.Http.Rpc.Serialization.TextJson/JustMyPackages.Http.Rpc.Serialization.TextJson.csproj" />
-    <Project Path="serialization/JustMyPackages.Serialization.MessagePack/JustMyPackages.Serialization.MessagePack.csproj" />
-    <Project Path="serialization/JustMyPackages.Serialization.NewtonsoftJson/JustMyPackages.Serialization.NewtonsoftJson.csproj" />
-    <Project Path="serialization/JustMyPackages.Serialization.TextJson/JustMyPackages.Serialization.TextJson.csproj" />
+  <Folder Name="/serialization/" />
+  <Folder Name="/serialization/messagepack/">
+    <Project Path="serialization/messagepack/JustMyPackages.Http.Rpc.Serialization.MessagePack/JustMyPackages.Http.Rpc.Serialization.MessagePack.csproj" />
+    <Project Path="serialization/messagepack/JustMyPackages.Serialization.MessagePack/JustMyPackages.Serialization.MessagePack.csproj" />
+  </Folder>
+  <Folder Name="/serialization/newtonsoft/">
+    <Project Path="serialization/newtonsoft/JustMyPackages.Http.Rpc.AspNetCore.NewtonsoftJson/JustMyPackages.Http.Rpc.AspNetCore.NewtonsoftJson.csproj" />
+    <Project Path="serialization/newtonsoft/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson.csproj" />
+    <Project Path="serialization/newtonsoft/JustMyPackages.Serialization.NewtonsoftJson/JustMyPackages.Serialization.NewtonsoftJson.csproj" />
+  </Folder>
+  <Folder Name="/serialization/textjson/">
+    <Project Path="serialization/textjson/JustMyPackages.Http.Rpc.Serialization.TextJson/JustMyPackages.Http.Rpc.Serialization.TextJson.csproj" />
+    <Project Path="serialization/textjson/JustMyPackages.Serialization.TextJson/JustMyPackages.Serialization.TextJson.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/JustMyPackages.Hosting.Tests.GenericHost/JustMyPackages.Hosting.Tests.GenericHost.csproj" />

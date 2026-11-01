@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Authors>Roman Vovk</Authors>
-    <Description>Package with System.Text.Json serializer for communicating via RPC HTTP API.</Description>
+    <Description>Package with MessagePack serializer for communicating via RPC HTTP API.</Description>
     <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
     <Nullable>enable</Nullable>
-    <Version>1.0.0</Version>
+    <Version>1.0.0-preview1</Version>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.TextJson\JustMyPackages.Serialization.TextJson.csproj" />
-    <ProjectReference Include="..\..\http-rpc\JustMyPackages.Http.Rpc.Serialization\JustMyPackages.Http.Rpc.Serialization.csproj" />
+    <ProjectReference Include="..\..\..\http-rpc\JustMyPackages.Http.Rpc.Serialization\JustMyPackages.Http.Rpc.Serialization.csproj" />
+    <ProjectReference Include="..\JustMyPackages.Serialization.MessagePack\JustMyPackages.Serialization.MessagePack.csproj" />
   </ItemGroup>
 
 </Project>

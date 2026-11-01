@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Authors>Roman Vovk</Authors>
-    <Description>Package with MessagePack serializer for communicating via RPC HTTP API.</Description>
+    <Description>Package with Newtonsoft.Json serializer for communicating via RPC HTTP API.</Description>
     <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
     <Nullable>enable</Nullable>
-    <Version>1.0.0-preview1</Version>
+    <Version>1.0.0</Version>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -16,13 +16,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
-    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.14" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\http-rpc\JustMyPackages.Http.Rpc.Serialization\JustMyPackages.Http.Rpc.Serialization.csproj" />
-    <ProjectReference Include="..\JustMyPackages.Serialization.MessagePack\JustMyPackages.Serialization.MessagePack.csproj" />
+    <ProjectReference Include="..\..\..\http-rpc\JustMyPackages.Http.Rpc.Serialization\JustMyPackages.Http.Rpc.Serialization.csproj" />
+    <ProjectReference Include="..\JustMyPackages.Serialization.NewtonsoftJson\JustMyPackages.Serialization.NewtonsoftJson.csproj" />
   </ItemGroup>
 
 </Project>

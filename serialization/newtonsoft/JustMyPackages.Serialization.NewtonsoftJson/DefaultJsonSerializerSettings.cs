@@ -1,3 +1,4 @@
+using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -46,6 +47,7 @@ namespace JustMyPackages.Serialization.NewtonsoftJson
             settings.TypeNameHandling = TypeNameHandling.None;
             settings.MetadataPropertyHandling = MetadataPropertyHandling.Ignore;
             settings.FloatFormatHandling = FloatFormatHandling.String;
+            settings.Culture = CultureInfo.InvariantCulture;
 
             settings.Converters.Add(new CompressedBase64StreamConverter());
             return settings;

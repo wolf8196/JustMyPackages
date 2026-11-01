@@ -34,9 +34,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\http-rpc\JustMyPackages.Http.Rpc\JustMyPackages.Http.Rpc.csproj" />
-    <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.MessagePack\JustMyPackages.Serialization.MessagePack.csproj" />
-    <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.NewtonsoftJson\JustMyPackages.Serialization.NewtonsoftJson.csproj" />
-    <ProjectReference Include="..\..\serialization\JustMyPackages.Serialization.TextJson\JustMyPackages.Serialization.TextJson.csproj" />
+    <ProjectReference Include="..\..\serialization\messagepack\JustMyPackages.Serialization.MessagePack\JustMyPackages.Serialization.MessagePack.csproj" />
+    <ProjectReference Include="..\..\serialization\newtonsoft\JustMyPackages.Serialization.NewtonsoftJson\JustMyPackages.Serialization.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\..\serialization\textjson\JustMyPackages.Serialization.TextJson\JustMyPackages.Serialization.TextJson.csproj" />
   </ItemGroup>
 
   <ItemGroup>
