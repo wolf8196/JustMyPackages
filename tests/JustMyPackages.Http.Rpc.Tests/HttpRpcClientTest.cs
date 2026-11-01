@@ -4,7 +4,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using FluentAssertions;
 using JustMyPackages.Http.Rpc.Client;
-using JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson;
 using JustMyPackages.Http.Rpc.Serialization.TextJson;
 using JustMyPackages.Http.Rpc.Tests.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
