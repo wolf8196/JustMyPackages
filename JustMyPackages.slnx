@@ -11,6 +11,7 @@
     <Project Path="http-rpc/JustMyPackages.Http.Rpc/JustMyPackages.Http.Rpc.csproj" />
   </Folder>
   <Folder Name="/serialization/">
+    <Project Path="serialization/JustMyPackages.Http.Rpc.Serialization.MessagePack/JustMyPackages.Http.Rpc.Serialization.MessagePack.csproj" />
     <Project Path="serialization/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson.csproj" />
     <Project Path="serialization/JustMyPackages.Http.Rpc.Serialization.TextJson/JustMyPackages.Http.Rpc.Serialization.TextJson.csproj" />
     <Project Path="serialization/JustMyPackages.Serialization.MessagePack/JustMyPackages.Serialization.MessagePack.csproj" />
