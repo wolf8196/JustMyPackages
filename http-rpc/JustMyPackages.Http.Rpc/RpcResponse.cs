@@ -1,23 +1,23 @@
-using System.Runtime.Serialization;
+using MessagePack;
 
 namespace JustMyPackages.Http.Rpc
 {
     /// <summary>
     /// Base RPC response.
     /// </summary>
-    [DataContract]
+    [MessagePackObject]
     public class RpcResponse
     {
         /// <summary>
         /// Value indicating whether the RPC call was successful.
         /// </summary>
-        [DataMember(Order = 0)]
+        [Key(0)]
         public bool IsSuccess { get; init; }
 
         /// <summary>
         /// Error message if the RPC call was not successful.
         /// </summary>
-        [DataMember(Order = 1)]
+        [Key(1)]
         public string? Error { get; init; }
     }
 }

@@ -1,11 +1,11 @@
-using System.Runtime.Serialization;
+using MessagePack;
 
 namespace JustMyPackages.Http.Rpc
 {
     /// <summary>
     /// Empty RPC request.
     /// </summary>
-    [DataContract]
+    [MessagePackObject]
     public sealed class RpcRequest
     {
         /// <summary>
