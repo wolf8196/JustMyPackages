@@ -6,7 +6,7 @@ using Microsoft.IO;
 
 namespace JustMyPackages.Http.Rpc.Serialization.TextJson
 {
-    internal class TextJsonRpcSerializer : IRpcSerializer
+    internal sealed class TextJsonRpcSerializer : IRpcSerializer
     {
         private readonly RecyclableMemoryStreamManager manager;
         private readonly JsonSerializerOptions options;

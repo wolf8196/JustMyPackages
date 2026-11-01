@@ -16,5 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\hosting\JustMyPackages.Hosting\JustMyPackages.Hosting.csproj" />
+    <ProjectReference Include="..\..\serialization\JustMyPackages.Http.Rpc.Serialization.MessagePack\JustMyPackages.Http.Rpc.Serialization.MessagePack.csproj" />
+    <ProjectReference Include="..\..\serialization\JustMyPackages.Http.Rpc.Serialization.TextJson\JustMyPackages.Http.Rpc.Serialization.TextJson.csproj" />
+    <ProjectReference Include="..\JustMyPackages.Hosting.Tests.WebHost.Api.Client\JustMyPackages.Hosting.Tests.WebHost.Api.Client.csproj" />
   </ItemGroup>
 </Project>

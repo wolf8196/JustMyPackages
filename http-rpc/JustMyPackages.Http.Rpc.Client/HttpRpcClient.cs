@@ -99,10 +99,6 @@ namespace JustMyPackages.Http.Rpc.Client
         protected async Task<TResponse> ParseResponse<TResponse>(HttpResponseMessage httpResponse, CancellationToken cancellationToken)
         {
             using Stream responseContent = await httpResponse.Content.ReadAsStreamAsync(cancellationToken);
-#if DEBUG
-            var str = await new StreamReader(responseContent).ReadToEndAsync(cancellationToken);
-            responseContent.Position = 0;
-#endif
             var response = serializer.Deserialize<TResponse>(responseContent);
             return response;
         }

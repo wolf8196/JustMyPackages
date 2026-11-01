@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\hosting\JustMyPackages.Hosting\JustMyPackages.Hosting.csproj" />
+    <ProjectReference Include="..\JustMyPackages.Hosting.Tests.WebHost.Api\JustMyPackages.Hosting.Tests.WebHost.Api.csproj" />
   </ItemGroup>
 
 </Project>

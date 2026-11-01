@@ -20,6 +20,8 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/JustMyPackages.Hosting.Tests.GenericHost/JustMyPackages.Hosting.Tests.GenericHost.csproj" />
+    <Project Path="tests/JustMyPackages.Hosting.Tests.WebHost.Api.Client/JustMyPackages.Hosting.Tests.WebHost.Api.Client.csproj" />
+    <Project Path="tests/JustMyPackages.Hosting.Tests.WebHost.Api/JustMyPackages.Hosting.Tests.WebHost.Api.csproj" />
     <Project Path="tests/JustMyPackages.Hosting.Tests.WebHost/JustMyPackages.Hosting.Tests.WebHost.csproj" />
     <Project Path="tests/JustMyPackages.Http.Rpc.Tests/JustMyPackages.Http.Rpc.Tests.csproj" />
     <Project Path="tests/JustMyPackages.Serialization.Tests/JustMyPackages.Serialization.Tests.csproj" />
