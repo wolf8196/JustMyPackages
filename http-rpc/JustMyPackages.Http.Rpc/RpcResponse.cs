@@ -6,7 +6,7 @@ namespace JustMyPackages.Http.Rpc
     /// Base RPC response.
     /// </summary>
     [DataContract]
-    public class RpcApiResponse
+    public class RpcResponse
     {
         /// <summary>
         /// Value indicating whether the RPC call was successful.

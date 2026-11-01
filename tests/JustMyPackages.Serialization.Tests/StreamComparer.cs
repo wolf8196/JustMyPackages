@@ -7,11 +7,11 @@ namespace JustMyPackages.Serialization.Tests
 {
     internal sealed class StreamComparer : IEqualityComparer<Stream>
     {
-        private readonly StreamCompare _comparer;
+        private readonly StreamCompare comparer;
 
         public StreamComparer()
         {
-            _comparer = new StreamCompare();
+            comparer = new StreamCompare();
         }
 
         public bool Equals(Stream? x, Stream? y)
@@ -26,7 +26,7 @@ namespace JustMyPackages.Serialization.Tests
                 y.Position = 0;
             }
 
-            return _comparer.AreEqualAsync(x, y, true).Result;
+            return comparer.AreEqualAsync(x, y, true).Result;
         }
 
         public int GetHashCode(Stream obj)

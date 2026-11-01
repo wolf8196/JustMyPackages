@@ -6,11 +6,11 @@ namespace JustMyPackages.Http.Rpc
     /// Empty RPC request.
     /// </summary>
     [DataContract]
-    public sealed class RpcApiRequest
+    public sealed class RpcRequest
     {
         /// <summary>
-        /// Empty instance of <see cref="RpcApiRequest"/>.
+        /// Empty instance of <see cref="RpcRequest"/>.
         /// </summary>
-        public static readonly RpcApiRequest Empty = new RpcApiRequest();
+        public static readonly RpcRequest Empty = new RpcRequest();
     }
 }

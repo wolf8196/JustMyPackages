@@ -16,20 +16,20 @@ namespace JustMyPackages.Serialization.Tests
         [Fact]
         public void SerializesEmptyRpcApiRequest()
         {
-            var expected = Act(RpcApiRequest.Empty);
+            var expected = Act(RpcRequest.Empty);
             expected.Should().NotBeNull();
         }
 
         [Fact]
         public void SerializesSuccessfulRpcApiResponse()
         {
-            ActAssert(new RpcApiResponse { IsSuccess = true });
+            ActAssert(new RpcResponse { IsSuccess = true });
         }
 
         [Fact]
         public void SerializesUnsuccessfulRpcApiResponse()
         {
-            ActAssert(new RpcApiResponse { IsSuccess = false, Error = "Test message." });
+            ActAssert(new RpcResponse { IsSuccess = false, Error = "Test message." });
         }
 
         [Fact]
