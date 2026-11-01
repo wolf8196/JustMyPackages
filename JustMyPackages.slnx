@@ -6,10 +6,12 @@
     <Project Path="hosting/JustMyPackages.Styles/JustMyPackages.Styles.csproj" />
   </Folder>
   <Folder Name="/http-rpc/">
+    <Project Path="http-rpc/JustMyPackages.Http.Rpc.Client/JustMyPackages.Http.Rpc.Client.csproj" />
     <Project Path="http-rpc/JustMyPackages.Http.Rpc.Serialization/JustMyPackages.Http.Rpc.Serialization.csproj" />
     <Project Path="http-rpc/JustMyPackages.Http.Rpc/JustMyPackages.Http.Rpc.csproj" />
   </Folder>
   <Folder Name="/serialization/">
+    <Project Path="http-rpc/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson/JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson.csproj" />
     <Project Path="serialization/JustMyPackages.Serialization.MessagePack/JustMyPackages.Serialization.MessagePack.csproj" />
     <Project Path="serialization/JustMyPackages.Serialization.NewtonsoftJson/JustMyPackages.Serialization.NewtonsoftJson.csproj" />
     <Project Path="serialization/JustMyPackages.Serialization.TextJson/JustMyPackages.Serialization.TextJson.csproj" />
@@ -17,6 +19,7 @@
   <Folder Name="/tests/">
     <Project Path="tests/JustMyPackages.Hosting.Tests.GenericHost/JustMyPackages.Hosting.Tests.GenericHost.csproj" />
     <Project Path="tests/JustMyPackages.Hosting.Tests.WebHost/JustMyPackages.Hosting.Tests.WebHost.csproj" />
+    <Project Path="tests/JustMyPackages.Http.Rpc.Tests/JustMyPackages.Http.Rpc.Tests.csproj" />
     <Project Path="tests/JustMyPackages.Serialization.Tests/JustMyPackages.Serialization.Tests.csproj" />
   </Folder>
 </Solution>
