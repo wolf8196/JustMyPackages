@@ -10,7 +10,7 @@ namespace JustMyPackages.Http.Rpc.Serialization.MessagePack
     public static class RpcSerializerServiceCollectionExtensions
     {
         /// <summary>
-        /// Adds MessagePack RPC serializer to the service collection.
+        /// Adds MessagePack RPC serializer with my default settings to the service collection.
         /// </summary>
         /// <param name="services">The service collection.</param>
         /// <param name="optsOverrides">An optional action to override the default <see cref="MessagePackSerializerOptions"/>.</param>

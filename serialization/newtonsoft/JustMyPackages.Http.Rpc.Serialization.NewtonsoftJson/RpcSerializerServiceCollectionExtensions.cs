@@ -10,7 +10,7 @@ namespace JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson
     public static class RpcSerializerServiceCollectionExtensions
     {
         /// <summary>
-        /// Adds Newtonsoft.Json-based RPC serializer to the service collection.
+        /// Adds Newtonsoft.Json-based RPC serializer with my default settings to the service collection.
         /// </summary>
         /// <param name="services">The service collection.</param>
         /// <param name="settingsOverrides">An optional action to override the default <see cref="JsonSerializerSettings"/>.</param>

@@ -10,7 +10,7 @@ namespace JustMyPackages.Http.Rpc.Serialization.TextJson
     public static class RpcSerializerServiceCollectionExtensions
     {
         /// <summary>
-        /// Adds System.Text.Json RPC serializer to the service collection.
+        /// Adds System.Text.Json RPC serializer with my default settings to the service collection.
         /// </summary>
         /// <param name="services">The service collection.</param>
         /// <param name="optsOverrides">An optional action to override the default <see cref="JsonSerializerOptions"/>.</param>
