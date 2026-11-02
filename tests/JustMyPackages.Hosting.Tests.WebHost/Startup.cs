@@ -1,3 +1,4 @@
+using JustMyPackages.Http.Rpc.AspNetCore.MessagePack;
 using JustMyPackages.Http.Rpc.AspNetCore.TextJson;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,7 +18,7 @@ namespace JustMyPackages.Hosting.Tests.WebHost
         {
             services.AddMyResponseCompression();
             services.AddMySwagger();
-            services.AddControllers().AddMyTextJson();
+            services.AddControllers().AddMyMessagePack().AddMyTextJson();
         }
 
         public void ConfigureApplication(IApplicationBuilder app)

@@ -18,7 +18,7 @@ namespace JustMyPackages.Http.Rpc.Serialization.MessagePack
         public static IServiceCollection AddMessagePackRpcSerializer(this IServiceCollection services, Action<MessagePackSerializerOptions>? optsOverrides = null)
         {
             services.TryAddSingleton<RecyclableMemoryStreamManager>();
-            services.TryAddSingleton<IRpcSerializer>(sp =>
+            services.AddSingleton<IRpcSerializer>(sp =>
             {
                 var opts = DefaultMessagePackSerializerOptions.Create();
                 optsOverrides?.Invoke(opts);

@@ -35,8 +35,8 @@ namespace JustMyPackages.Http.Rpc.Client
             var requestUrl = Url.Combine(HttpClient.BaseAddress!.ToString(), url);
             try
             {
-                using HttpRequestMessage httpRequest = CreateRequest(request, url);
-                using HttpResponseMessage httpResponse = await HttpClient.SendAsync(httpRequest, cancellationToken);
+                using var httpRequest = CreateRequest(request, url);
+                using var httpResponse = await HttpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseContentRead, cancellationToken);
 
                 if (!httpResponse.IsSuccessStatusCode)
                 {
@@ -93,12 +93,13 @@ namespace JustMyPackages.Http.Rpc.Client
                 Content = new StreamContent(requestContent),
             };
             httpRequest.Content.Headers.ContentType = new MediaTypeHeaderValue(serializer.MediaType);
+            httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(serializer.MediaType));
             return httpRequest;
         }
 
         protected async Task<TResponse> ParseResponse<TResponse>(HttpResponseMessage httpResponse, CancellationToken cancellationToken)
         {
-            using Stream responseContent = await httpResponse.Content.ReadAsStreamAsync(cancellationToken);
+            using var responseContent = await httpResponse.Content.ReadAsStreamAsync(cancellationToken);
             var response = serializer.Deserialize<TResponse>(responseContent);
             return response;
         }

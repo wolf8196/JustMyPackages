@@ -32,6 +32,7 @@ namespace JustMyPackages.Hosting.Tests.WebHost.Controllers
 
             var response = new GetForecastResponse
             {
+                IsSuccess = true,
                 Data = data
             };
 

@@ -24,7 +24,12 @@ namespace JustMyPackages.Hosting.Tests.GenericHost
             while (!stoppingToken.IsCancellationRequested)
             {
                 logger.Information("Worker running at: {Time}", DateTimeOffset.Now);
-                var forecast = await forecastApi.GetAsync(RpcRequest.Empty, stoppingToken);
+                var forecastResponse = await forecastApi.GetAsync(RpcRequest.Empty, stoppingToken);
+                if (forecastResponse.IsFailure())
+                {
+                    logger.Error("Failed to get forecast data: {Error}", forecastResponse.Error);
+                }
+
                 await Task.Delay(1000, stoppingToken);
             }
         }

@@ -18,7 +18,7 @@ namespace JustMyPackages.Serialization.MessagePack
                 NativeDecimalResolver.Instance,
                 StandardResolver.Instance);
 
-            var options = MessagePackSerializerOptions.Standard.WithResolver(resolver);
+            var options = MessagePackSerializerOptions.Standard.WithResolver(resolver).WithSecurity(MessagePackSecurity.UntrustedData);
             return options;
         }
     }

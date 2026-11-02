@@ -7,15 +7,15 @@ namespace JustMyPackages.Hosting.Tests.WebHost.Api
     public class WeatherForecastDto
     {
         [Key(0)]
-        public required DateOnly Date { get; init; }
+        public DateOnly Date { get; set; }
 
         [Key(1)]
-        public required int TemperatureC { get; init; }
+        public int TemperatureC { get; set; }
 
         [Key(2)]
-        public required string Summary { get; init; }
+        public string Summary { get; set; } = string.Empty;
 
         [Key(3)]
-        public required Certainty Certainty { get; init; }
+        public Certainty Certainty { get; set; }
     }
 }

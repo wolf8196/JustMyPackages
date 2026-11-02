@@ -12,6 +12,7 @@
   </Folder>
   <Folder Name="/serialization/" />
   <Folder Name="/serialization/messagepack/">
+    <Project Path="serialization/messagepack/JustMyPackages.Http.Rpc.AspNetCore.MessagePack/JustMyPackages.Http.Rpc.AspNetCore.MessagePack.csproj" />
     <Project Path="serialization/messagepack/JustMyPackages.Http.Rpc.Serialization.MessagePack/JustMyPackages.Http.Rpc.Serialization.MessagePack.csproj" />
     <Project Path="serialization/messagepack/JustMyPackages.Serialization.MessagePack/JustMyPackages.Serialization.MessagePack.csproj" />
   </Folder>

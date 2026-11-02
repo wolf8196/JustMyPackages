@@ -18,7 +18,7 @@ namespace JustMyPackages.Http.Rpc.Serialization.TextJson
         public static IServiceCollection AddTextJsonRpcSerializer(this IServiceCollection services, Action<JsonSerializerOptions>? optsOverrides = null)
         {
             services.TryAddSingleton<RecyclableMemoryStreamManager>();
-            services.TryAddSingleton<IRpcSerializer>(sp =>
+            services.AddSingleton<IRpcSerializer>(sp =>
             {
                 var opts = DefaultJsonSerializerOptions.Create();
                 optsOverrides?.Invoke(opts);

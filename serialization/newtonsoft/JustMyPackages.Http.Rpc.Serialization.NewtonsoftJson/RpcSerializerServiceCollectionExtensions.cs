@@ -18,7 +18,7 @@ namespace JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson
         public static IServiceCollection AddNewtonsoftJsonRpcSerializer(this IServiceCollection services, Action<JsonSerializerSettings>? settingsOverrides = null)
         {
             services.TryAddSingleton<RecyclableMemoryStreamManager>();
-            services.TryAddSingleton<IRpcSerializer>(sp =>
+            services.AddSingleton<IRpcSerializer>(sp =>
             {
                 var settings = DefaultJsonSerializerSettings.Create();
                 settingsOverrides?.Invoke(settings);

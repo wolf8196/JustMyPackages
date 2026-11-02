@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace JustMyPackages.Http.Rpc.AspNetCore.NewtonsoftJson
 {
-    public static class NewtonsoftJsonRpcMvcBuilderExtensions
+    public static class NewtonsoftJsonMvcBuilderExtensions
     {
         /// <summary>
         /// Adds Newtonsoft.Json with my default settings as MVC serializer.
