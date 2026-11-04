@@ -35,7 +35,7 @@ namespace JustMyPackages.Http.Rpc.Tests.Infrastructure
 
         public ILogger Logger { get; }
 
-        public WireMockServer DestinationService { get; private set; }
+        public WireMockServer DestinationService { get; }
 
         public void Dispose()
         {

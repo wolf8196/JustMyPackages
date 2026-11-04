@@ -70,16 +70,22 @@ namespace JustMyPackages.Http.Rpc.Tests
         public async Task HandlesSocketException()
         {
             // Arrange
+            var services = new ServiceCollection()
+                .AddLogging()
+                .AddSingleton(fixture.Logger)
+                .AddTextJsonRpcSerializer()
+                .AddHttpRpcClient<ITestApi, TestApiClient>(
+                    GlobalFixture.ServiceName,
+                    sp => new HttpRpcClientSettings("http://localhost:1234"))
+                .Services;
             using var sp = services.BuildServiceProvider();
             var client = sp.GetRequiredService<ITestApi>();
             var expected = new TestResponse
             {
                 IsSuccess = false,
-                Error = "Failed to connect to http://localhost:1111/api/test of TestService service.",
+                Error = "Failed to connect to http://localhost:1234/api/test of TestService service.",
             };
             var request = new TestRequest { Number = 1 };
-
-            destinationService.Stop();
 
             // Act
             var actual = await client.Test(request, TestContext.Current.CancellationToken);
