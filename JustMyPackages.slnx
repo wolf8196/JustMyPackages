@@ -7,6 +7,7 @@
   </Folder>
   <Folder Name="/http-rpc/">
     <Project Path="http-rpc/JustMyPackages.Http.Rpc.Client/JustMyPackages.Http.Rpc.Client.csproj" />
+    <Project Path="http-rpc/JustMyPackages.Http.Rpc.ExceptionHandling/JustMyPackages.Http.Rpc.ExceptionHandling.csproj" />
     <Project Path="http-rpc/JustMyPackages.Http.Rpc.Serialization/JustMyPackages.Http.Rpc.Serialization.csproj" />
     <Project Path="http-rpc/JustMyPackages.Http.Rpc/JustMyPackages.Http.Rpc.csproj" />
   </Folder>

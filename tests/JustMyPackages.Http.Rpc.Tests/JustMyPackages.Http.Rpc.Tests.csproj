@@ -29,6 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\hosting\JustMyPackages.Logging\JustMyPackages.Logging.csproj" />
     <ProjectReference Include="..\..\http-rpc\JustMyPackages.Http.Rpc.Client\JustMyPackages.Http.Rpc.Client.csproj" />
+    <ProjectReference Include="..\..\http-rpc\JustMyPackages.Http.Rpc.ExceptionHandling\JustMyPackages.Http.Rpc.ExceptionHandling.csproj" />
     <ProjectReference Include="..\..\serialization\messagepack\JustMyPackages.Http.Rpc.Serialization.MessagePack\JustMyPackages.Http.Rpc.Serialization.MessagePack.csproj" />
     <ProjectReference Include="..\..\serialization\newtonsoft\JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson\JustMyPackages.Http.Rpc.Serialization.NewtonsoftJson.csproj" />
     <ProjectReference Include="..\..\serialization\textjson\JustMyPackages.Http.Rpc.Serialization.TextJson\JustMyPackages.Http.Rpc.Serialization.TextJson.csproj" />

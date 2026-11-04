@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using FluentAssertions;
 using JustMyPackages.Http.Rpc;
 using MessagePack;
+
+[assembly: ExcludeFromCodeCoverage]
 
 namespace JustMyPackages.Serialization.Tests
 {

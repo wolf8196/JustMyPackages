@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Authors>Roman Vovk</Authors>
+    <Description>Package for RPC HTTP API exception handling.</Description>
+    <PackageProjectUrl>https://github.com/wolf8196/JustMyPackages</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wolf8196/JustMyPackages</RepositoryUrl>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JustMyPackages.Styles" Version="1.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JustMyPackages.Http.Rpc.Serialization\JustMyPackages.Http.Rpc.Serialization.csproj" />
+    <ProjectReference Include="..\JustMyPackages.Http.Rpc\JustMyPackages.Http.Rpc.csproj" />
+  </ItemGroup>
+  
+
+</Project>
